@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+        <beans>
+        <bean id ="eng1" class="springIOC.Engine">
+        <property name="make" value="suzuki"></property>
+        <property name="capacity" value="18000cc"></property>
+          
+        </bean>
+        
+        <bean id="car1" class="springIOC.Car">
+        <property name="brand" value="honda"></property>
+        <property name="cost" value="12lakh"></property>
+        <property name="idno" value="1234"></property>
+        <property name="eng" ref="eng1"></property>
+        
+        
+        </bean>
+        </beans>
